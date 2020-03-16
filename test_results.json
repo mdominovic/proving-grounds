@@ -1,0 +1,4 @@
+{
+    "//cpp/reverse_integer:test": "PASSED",
+    "//python/JSON_parser:test_json_parser": "PASSED"
+}

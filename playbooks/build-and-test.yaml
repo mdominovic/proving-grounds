@@ -1,0 +1,11 @@
+- hosts: all
+  tasks:
+    - name: cd to repo, run bazel build and test on all repos
+      shell: |
+        cd /root/src/gerrit/proving-grounds/
+        bazel build ...
+        bazel test ... > test_result_output.txt
+        echo ++++++++++++++++++++++++
+        cat test_result_output.txt
+        echo ++++++++++++++++++++++++
+        python3 result_parser.py

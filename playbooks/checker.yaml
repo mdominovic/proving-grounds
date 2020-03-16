@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+    - name: Print directories
+      shell: |
+        echo $PWD
+        ls
+        cd /root/src/gerrit
+        ls
+        cd /root/src/gerrit/proving-grounds/
+        ls

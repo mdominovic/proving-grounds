@@ -1,0 +1,7 @@
+- job:
+    name: bazel-build-and-test
+    run: playbooks/build-and-test.yaml
+
+- job:
+    name: checker
+    run: playbooks/checker.yaml

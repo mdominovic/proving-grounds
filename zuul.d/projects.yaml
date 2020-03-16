@@ -1,0 +1,11 @@
+- project:
+    name: proving-grounds
+    test:
+      jobs:
+        - checker
+    check:
+      jobs:
+        - bazel-build-and-test
+    gate:
+      jobs:
+        - bazel-build-and-test
